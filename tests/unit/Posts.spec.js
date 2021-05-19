@@ -1,10 +1,18 @@
+import Vue from 'vue'
+import Vuex from 'vuex'
+
 import { mount } from '@vue/test-utils'
-import Posts from '@/components/Posts.vue'
+import CommentsList from '@/components/CommentsList.vue'
+import storeData from '@/store/index.js'
 
-describe('Posts', () => {
-    it('renders a div', () => {
-      const wrapper = mount(Posts)
-      expect(wrapper.contains('div')).toBe(true)
-    })
-  })
+Vue.use(Vuex);
+//Création du store
+const store = new Vuex.Store(storeData);
 
+test('store is loaded', ()=>{
+  const wrapper = mount(CommentsList,{
+    store
+  });
+  store.state.user.push({name:'Joe'})
+  expect(wrapper.vm.user).toEqual([{name: 'Joe'}])
+})

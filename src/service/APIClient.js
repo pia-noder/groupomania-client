@@ -13,7 +13,7 @@ if (localStorage.getItem('userToken')) {
 
 export default () => {
     return axios.create({
-        baseURL: `http://localhost:3000/`,
+        baseURL: `https://groupomania-app-ca.herokuapp.com/`,
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json',

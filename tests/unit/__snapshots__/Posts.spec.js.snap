@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu is render renders a div 1`] = `
+<div class="nav">
+  <div class="bloc-top-part"><img id="imgLogoBlack" src="@/assets/icon-left-font-monochrome-black.svg" alt="logo en noir et blanc de Groupomania" class="imgLogoBlack">
+    <div class="search">
+      <font-awesome-icon icon="search" class="icon-search"></font-awesome-icon> <input aria-label="Faire une recherche" type="text" class="searchBarre">
+    </div>
+  </div>
+  <ul>
+    <li><a href="" aria-label="Aller vers page d'accueil" title="Accueil">
+        <router-link to="[object Object]">
+          <font-awesome-icon icon="home" class="icon fa-lg"></font-awesome-icon>
+        </router-link>
+      </a></li>
+    <li><a href="#" aria-label="Lien vers page du profile" title="Profile utilisateur">
+        <router-link to="[object Object]">
+          <font-awesome-icon icon="user-circle" class="icon fa-lg"></font-awesome-icon>
+        </router-link>
+      </a></li>
+    <li><a href="" aria-label="Notifications" title="Notification">
+        <router-link to="[object Object]" class="link">
+          <font-awesome-icon icon="bell" class="icon fa-lg"></font-awesome-icon>
+        </router-link>
+      </a></li>
+    <li><a href="" aria-label="Newpaper" title="Newpaper">
+        <router-link to="[object Object]" class="link">
+          <font-awesome-icon icon="newspaper" class="icon fa-lg"></font-awesome-icon>
+        </router-link>
+      </a></li>
+    <li><a href="" aria-label="Déconnexion" title="déconnexion">
+        <router-link to="[object Object]">
+          <font-awesome-icon icon="sign-out-alt" class="icon fa-lg"></font-awesome-icon>
+        </router-link>
+      </a></li>
+  </ul>
+</div>
+`;

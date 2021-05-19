@@ -6,7 +6,7 @@
       <div class="publication">
         <CreatePost  class="bloc-post" />
 
-        <div v-if="posts[0]" class="if-post">
+        <div v-if="posts.length > 0" class="if-post">
           <div v-for="post in posts" :post="post"  :key="post.id">
             <Post  
               class="bloc-post post" 

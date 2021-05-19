@@ -133,7 +133,7 @@ export default {
         margin-top: 13px;
         border: 2px solid #E57373;
         border-radius: 13px;
-
+    
         .post-header{
             display: flex;
             justify-content: space-between;

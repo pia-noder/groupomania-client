@@ -51,6 +51,7 @@ export default {
     
     async beforeCreate() {
         await this.$store.dispatch('loadUser', this.$route.params.userId );
+        console.log(this.user)
     },
     
     computed: {
